@@ -26,7 +26,7 @@ uint8_t in_humidity = 0;
 uint8_t out_humidity = 0;
 
 unsigned char table[] =
-{0xc0, 0xf9, 0xa4, 0xb0, 0x99, 0x92, 0x82, 0xf8, 0x80, 0x90};
+{0xc0, 0xf9, 0xa4, 0xb0, 0x99, 0x92, 0x82, 0xf8, 0x80, 0x90, 0x0};
 
 
 void Display(int id, unsigned char num);
@@ -81,7 +81,7 @@ void loop() {
 
 
   for (int i = 0; i < NUM_OF_DIGITS; i++) {
-    for (int j = 0; j < 10; j++) {
+    for (int j = 0; j < 11; j++) {
       Display(i, j);
       delay(500);
       Serial.println(j);
