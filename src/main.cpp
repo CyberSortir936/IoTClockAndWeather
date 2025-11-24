@@ -73,11 +73,7 @@ void loop() {
   Serial.print(t);
   Serial.print(F("°C "));
   Serial.print(f);
-  Serial.print(F("°F  Heat index: "));
-  Serial.print(hic);
-  Serial.print(F("°C "));
-  Serial.print(hif);
-  Serial.println(F("°F"));
+
 
 
   for (int i = 0; i < NUM_OF_DIGITS; i++) {
